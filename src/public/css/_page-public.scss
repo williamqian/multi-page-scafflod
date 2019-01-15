@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+//公共类，在此设置，包含组件用的公共类，如果组件用的公共类在component-public内引用，则会带来很多冗余
+.inner-container
+{
+    padding: 0 15px;
+}

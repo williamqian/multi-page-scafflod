@@ -1,0 +1,67 @@
+@import '../../public/css/component-public';
+
+.c-list
+{
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-radius: 4px;
+    background-color: #fff;
+    .item
+    {
+        margin: 0;
+        padding: 30px 15px;
+
+        border-bottom: 1px solid #ebebeb;
+        &:hover
+        {
+            background-color: $brand-primary;
+            .media-body
+            {
+                color: #eee;
+                h4
+                {
+                    a
+                    {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &:last-child
+        {
+            border-width: 0;
+        }
+        img
+        {
+            @media (max-width: 767px)
+            {
+                width: 100px;
+            }
+            @media (min-width: 768px)
+            {
+                width: 200px;
+            }
+        }
+        .media-body
+        {
+            text-align: left;
+
+            color: #999;
+            h4
+            {
+                a
+                {
+                    font-size: 24px;
+
+                    color: #333;
+                }
+            }
+            p
+            {
+                overflow: hidden;
+            }
+        }
+    }
+}

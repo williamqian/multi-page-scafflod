@@ -1,0 +1,54 @@
+@import '../../public/css/component-public';
+.c-list-2
+{
+    .item
+    {
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+
+        margin-bottom: 30px;
+        &:hover
+        {
+            img
+            {
+                transform: scale(1.2, 1.2);
+
+                filter: blur(2px) brightness(.6);
+            }
+            .title
+            {
+                top: 30px;
+                left: 30px;
+            }
+        }
+        img
+        {
+            width: 100%;
+
+            transition: all 1s 0s ease;
+            transform-origin: center bottom;
+        }
+        .title
+        {
+            font-size: 18px;
+            line-height: 20px;
+
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            height: 40px;
+            margin: 0;
+            padding: 10px 20px;
+
+            transition: all 1s 0s ease;
+            letter-spacing: 2px;
+
+            color: #fff;
+            border-radius: 20px;
+            background-color: rgba(245, 127, 1, .6);
+        }
+    }
+}

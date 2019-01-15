@@ -1,0 +1,88 @@
+.c-top
+{
+    padding: 20px 0;
+    .container
+    {
+        .left
+        {
+            display: block;
+
+            width: 75%;
+            margin: 0 auto;
+            @media (max-width: 767px)
+            {
+                margin-bottom: 15px;
+                img
+                {
+                    width: 100%;
+                }
+            }
+            @media (min-width: 768px)
+            {
+                img
+                {
+                    height: 122px;
+                }
+            }
+            img
+            {
+                display: block;
+
+                margin: 0 auto;
+            }
+        }
+        .right
+        {
+            min-width: 216px;
+            margin: 0 auto;
+            @media (max-width: 767px)
+            {
+                width: 75%;
+            }
+            @media (min-width: 768px)
+            {
+                float: right;
+
+                width: 60%;
+            }
+            form
+            {
+                margin: 0 auto;
+                .help-block
+                {
+                    font-size: 12px;
+                }
+            }
+            .contact
+            {
+                a
+                {
+                    display: block;
+
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 auto;
+
+                    text-align: center;
+
+                    border-radius: 50%;
+                    background-color: #333;
+                    i
+                    {
+                        font-size: 18px;
+                        line-height: 30px;
+
+                        width: 30px;
+                        height: 30px;
+
+                        color: #eee;
+                        &:hover
+                        {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

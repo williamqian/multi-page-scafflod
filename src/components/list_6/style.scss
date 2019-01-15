@@ -1,0 +1,53 @@
+@import '../../public/css/component-public';
+
+.c-list-6
+{
+    @media (min-width: 768px)
+    {
+        text-align: right;
+    }
+    .img-box
+    {
+        @media (min-width: 768px)
+        {
+            padding-right: 15px;
+        }
+        @media (max-width: 767px)
+        {
+            margin-bottom: 20px;
+        }
+        img
+        {
+            width: 100%;
+        }
+    }
+    .des-box
+    {
+        @media (min-width: 768px)
+        {
+            padding-left: 15px;
+        }
+        p.des
+        {
+            margin-bottom: 30px;
+        }
+        .item
+        {
+            .img-div
+            {
+                width: 100%;
+                padding: 50% 0;
+
+                border: 1px solid $brand-primary;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 100% 100%;
+            }
+            h5
+            {
+                text-align: center;
+            }
+        }
+    }
+}

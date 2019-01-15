@@ -1,0 +1,49 @@
+@import '../../public/css/component-public';
+.c-banner-3
+{
+    position: relative;
+
+    overflow: hidden;
+
+    .slide-main
+    {
+        margin: 0 -15px;
+        .item
+        {
+            padding: 0 15px;
+            a
+            {
+                position: relative;
+
+                display: block;
+                img
+                {
+                    width: 100%;
+                }
+                .txt
+                {
+                    position: absolute;
+                    bottom: 8%;
+                    left: 0;
+
+                    width: 100%;
+                    padding: 15px 0 ;
+
+                    color: #333;
+                    background-color: rgba(255,255,255,.8);
+                    h3
+                    {
+                        font-size: 20px;
+                        font-weight: normal;
+
+                        margin-top: 0;
+                    }
+                    .fa
+                    {
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

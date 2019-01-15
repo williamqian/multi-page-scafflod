@@ -1,0 +1,115 @@
+@import '../../public/css/component-public';
+
+.c-list-3
+{
+    .thumbnail
+    {
+        position: relative;
+
+        overflow: hidden;
+
+        margin-bottom: 30px;
+        padding: 0;
+
+        text-align: center;
+
+        border-width: 0;
+
+        &:hover
+        {
+            .mask
+            {
+                background-color: $brand-primary;
+
+                @include m-opacity(.6);
+            }
+            .caption
+            {
+                height: 130px;
+                h3
+                {
+                    margin: 0 0 15px;
+                }
+                p
+                {
+                    margin: 0 0 15px;
+
+                    @include m-opacity(1);
+                }
+                a
+                {
+                    @include m-opacity(1);
+                }
+            }
+        }
+        img
+        {
+            width: 100%;
+
+            transition: transform .3s 0s ease;
+            transform-origin: center bottom;
+            &:hover
+            {
+                transform: scale(1.2);
+            }
+        }
+        .mask
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            transition: all .6s ease 0s;
+
+            background-color: #000;
+
+            @include m-opacity(.3);
+        }
+        .caption
+        {
+            width: 100%;
+            //overflow: hidden;
+            height: 26px;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            transition: all .6s ease 0s;
+
+            @include m-center;
+            h3
+            {
+                margin: 0 0 30px;
+
+                transition: all .6s ease 0s;
+
+                color: #fff;
+
+                @include m-ellipsis(26px);
+            }
+            p
+            {
+                overflow: hidden;
+
+                height: 40px;
+                margin: 0 0 45px;
+
+                transition: all .6s ease 0s;
+
+                color: #fff;
+
+                @include m-opacity(0);
+            }
+            a
+            {
+                margin: 0;
+
+                transition: all .6s ease 0s;
+
+                @include m-opacity(0);
+            }
+        }
+    }
+}

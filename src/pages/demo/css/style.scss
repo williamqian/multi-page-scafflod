@@ -1,0 +1,31 @@
+@import '../../../public/css/page-public';
+body
+{
+    position: relative;
+}
+.p-demo
+{
+    padding: 20px 0;
+
+    text-align: center;
+    .p-demo-com-type
+    {
+        margin: 0;
+        margin-top: 30px;
+        padding: 15px 0;
+
+        color: #fff;
+        background-color: $brand-danger;
+    }
+    .p-demo-com-name
+    {
+        //background-color: gray;
+        margin: 10px 0 10px;
+        padding: 10px 20px;
+
+        text-align: left;
+
+        color: #000;
+        border-left: 4px solid $brand-warning;
+    }
+}

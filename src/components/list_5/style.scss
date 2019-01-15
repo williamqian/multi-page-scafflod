@@ -1,0 +1,44 @@
+@import '../../public/css/component-public';
+
+.c-list-5
+{
+    .item
+    {
+        overflow: hidden;
+
+        margin-bottom: 30px;
+        padding: 0;
+
+        transition: all .3s 0s ease;
+        text-align: left;
+
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        &:hover
+        {
+            transform: translate(0, -8px);
+
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .2);
+        }
+        li
+        {
+            font-size: 16px;
+
+            padding: 8px 15px;
+
+            @include m-ellipsis(38px);
+            &.title
+            {
+                font-size: 20px;
+
+                height: 58px;
+                padding: 15px;
+
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}

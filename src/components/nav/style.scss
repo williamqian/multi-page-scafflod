@@ -1,0 +1,75 @@
+@import '../../public/css/component-public';
+.c-nav.navbar
+{
+    overflow: hidden;
+    .navbar-nav
+    {
+        width: 100%;
+        @media (min-width: 768px)
+        {
+            & > li
+            {
+                width: 16.6%;
+            }
+        }
+         > li
+        {
+            float: left;
+
+
+            a
+            {
+                text-align: center;
+            }
+            &.active
+            {
+                @media (min-width: 768px)
+                {
+                    .sub-nav
+                    {
+                        display: block;
+                    }
+                }
+            }
+            .sub-nav
+            {
+                position: relative;
+                z-index: 1000;
+                //top: 100%;
+                //left: 0;
+
+                display: none;
+
+                width: 10000px;
+                margin-left: -5000px;
+                padding-left: 5000px;
+
+                text-align: left;
+                white-space: nowrap;
+
+                background-color: $navbar-default-link-active-bg;
+                li
+                {
+                    display: inline-block;
+
+
+                    //overflow: hidden;
+                    a
+                    {
+                        line-height: 20px;
+
+                        display: block;
+
+                        height: 40px;
+                        padding: 10px;
+                        //text-decoration: none;
+
+                        color: $navbar-default-link-color;
+
+                        //color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

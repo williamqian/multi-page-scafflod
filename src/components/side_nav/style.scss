@@ -1,0 +1,63 @@
+@import '../../public/css/component-public';
+.c-side-nav
+{
+    text-align: left;
+    h1
+    {
+        font-size: 22px;
+
+        margin-bottom: 20px;
+
+        color: #737373;
+    }
+    ul
+    {
+        margin: 0;
+        padding: 0;
+        li
+        {
+            padding: 10px 0;
+
+            text-align: left;
+
+            border-bottom: 1px solid #aaa;
+            &:last-child
+            {
+                border-bottom-width: 0;
+            }
+            a
+            {
+                font-size: 18px;
+                font-weight: bold;
+
+                display: block;
+
+                color: #333;
+            }
+            ul
+            {
+                padding-top: 10px;
+                li
+                {
+                    padding: 3px 0;
+
+                    border-bottom-width: 0;
+                    &.active
+                    {
+                        a
+                        {
+                            color: #000;
+                        }
+                    }
+                    a
+                    {
+                        font-size: 14px;
+                        font-weight: normal;
+
+                        color: #737373;
+                    }
+                }
+            }
+        }
+    }
+}

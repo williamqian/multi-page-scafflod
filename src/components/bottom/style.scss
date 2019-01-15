@@ -1,0 +1,116 @@
+@import '../../public/css/component-public';
+
+
+.c-bottom
+{
+    .bottom-nav
+    {
+        padding: 30px 0;
+
+        text-align: center;
+
+        background-color: #32373c;
+        h4
+        {
+            a
+            {
+                color: #dadada;
+            }
+        }
+        a
+        {
+            color: #e4f1fe;
+        }
+        ul
+        {
+            margin: 0 0 15px;
+            padding: 0;
+            &.nav-list
+            {
+                li
+                {
+                    line-height: 20px;
+
+                    padding: 3px;
+
+                    @include m-ellipsis(26px);
+                }
+            }
+            li
+            {
+                text-align: center;
+
+                color: #e4f1fe;
+            }
+            &.contact
+            {
+                margin-top: 20px;
+                li
+                {
+                    line-height: 1;
+
+                    padding: 5px;
+                    &.phone
+                    {
+                        a
+                        {
+                            font-size: 30px;
+
+                            text-decoration: none;
+
+                            color: $brand-primary;
+                        }
+                    }
+                    &.icon
+                    {
+                        a
+                        {
+                            display: inline-block;
+
+                            margin: 0 3px;
+
+                            text-decoration: none;
+
+                            outline: none;
+                            .fa
+                            {
+                                font-size: 26px;
+
+                                display: inline-block;
+                                &.fa-wechat
+                                {
+                                    color: #1aad19;
+                                }
+                                &.fa-qq
+                                {
+                                    color: #3d95d5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright
+    {
+        padding: 15px 0;
+
+        text-align: center;
+
+        color: #e4f1fe;
+        background-color: #282d32;
+        p
+        {
+            margin: 0;
+        }
+        a
+        {
+            color: #e4f1fe;
+        }
+        img
+        {
+            height: 30px;
+        }
+    }
+}

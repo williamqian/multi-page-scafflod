@@ -1,0 +1,147 @@
+@import '../../public/css/component-public';
+@mixin m-customs-logos-item($i)
+{
+    @if $i==1
+    {
+        width: 108px;
+        height: 48px;
+
+        background-position: 0 -439px;
+    }
+    @else if $i==2
+    {
+        width: 108px;
+        height: 36px;
+
+        background-position: 0 -403px;
+    }
+    @else if $i==3
+    {
+        width: 108px;
+        height: 63px;
+
+        background-position: 0 -340px;
+    }
+    @else if $i==4
+    {
+        width: 108px;
+        height: 65px;
+
+        background-position: 0 -487px;
+    }
+    @else if $i==5
+    {
+        width: 108px;
+        height: 52px;
+
+        background-position: 0 -623px;
+    }
+    @else if $i==6
+    {
+        width: 108px;
+        height: 32px;
+
+        background-position: 0 -222px;
+    }
+    @else if $i==7
+    {
+        width: 108px;
+        height: 15px;
+
+        background-position: 0 -608px;
+    }
+    @else if $i==8
+    {
+        width: 108px;
+        height: 56px;
+
+        background-position: 0 -552px;
+    }
+    @else if $i==9
+    {
+        width: 108px;
+        height: 68px;
+
+        background-position: 0 -154px;
+    }
+    @else if $i==10
+    {
+        width: 108px;
+        height: 41px;
+
+        background-position: 0 -113px;
+    }
+    @else if $i==11
+    {
+        width: 108px;
+        height: 34px;
+
+        background-position: 0 -79px;
+    }
+    @else if $i==12
+    {
+        width: 108px;
+        height: 43px;
+
+        background-position: 0 -297px;
+    }
+    @else if $i==13
+    {
+        width: 108px;
+        height: 43px;
+
+        background-position: 0 -254px;
+    }
+    @else if $i==14
+    {
+        width: 80px;
+        height: 79px;
+
+        background-position: 0 0;
+    }
+}
+
+.c-custom
+{
+    ul
+    {
+        font-size: 0;
+
+        padding: 0;
+        li
+        {
+            position: relative;
+
+            display: inline-block;
+
+            width: 130px;
+            height: 100px;
+            margin-top: -1px;
+            margin-left: -1px;
+
+            border: 1px solid #ddd;
+            div
+            {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                display: block;
+
+                margin: auto;
+
+                background-image: url(./img/customs_logos.png);
+                background-repeat: no-repeat;
+                @for $i from 1 through 14
+                {
+                    &.logo-#{$i}
+                    {
+                        @include m-customs-logos-item($i);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../public/css/component-public';
+
+.c-list-4
+{
+    .item
+    {
+        margin-bottom: 30px;
+
+        text-align: center;
+        i
+        {
+            display: block;
+
+            margin: 0 auto;
+
+            transition: all .3s 0s ease;
+
+            color: $brand-primary;
+            border: 1px solid #999;
+            border-radius: 50%;
+            background-color: #fff;
+            &:hover
+            {
+                transform: translateY(-6px);
+
+                color: #fff;
+                border-width: 0;
+                background-color: $brand-primary;
+            }
+            @media (max-width: 767px)
+            {
+                font-size: 40px;
+                line-height: 80px;
+
+                width: 80px;
+                height: 80px;
+            }
+            @media (min-width: 768px)
+            {
+                font-size: 60px;
+                line-height: 120px;
+
+                width: 120px;
+                height: 120px;
+            }
+        }
+        h4
+        {
+            margin: 26px auto 5px;
+
+            @include m-ellipsis(20px);
+        }
+        p
+        {
+            overflow: hidden;
+
+            height: 40px;
+            margin: 0;
+
+            color: #666;
+        }
+    }
+}
